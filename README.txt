@@ -41,3 +41,6 @@ Commands:
 Running:
   Download the latest JAR
   Run it using `java -jar TlanG.jar <FILE_TO_RUN>
+  The file extensions are: .tlg and .tlg.b64
+    - tlg    : The normal format
+    - tlg.b64: The code converted to base64
