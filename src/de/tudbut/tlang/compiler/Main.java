@@ -83,9 +83,9 @@ public class Main {
                 .replaceAll("%R", ">")
                 .replaceAll("%U", "'")
                 .replaceAll("%D", ",")
-                .replaceAll("%P", "%")
                 .replaceAll("%1", "(")
-                .replaceAll("%2", ")"));
+                .replaceAll("%2", ")")
+                .replaceAll("%P", "%"));
         System.out.println();
     }
 }
