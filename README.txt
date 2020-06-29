@@ -27,3 +27,7 @@ Commands:
   #                                        - go to start of line in terminal (must be compatible with terminal, any linux terminal works)
   -                                        - delete everything behind the cursor (must be compatible with terminal, any linux terminal works)
   \n                                       - line break (program line breaks are ignored)
+
+Running:
+  Download the latest JAR
+  Run it using `java -jar TlanG.jar <FILE_TO_RUN>
