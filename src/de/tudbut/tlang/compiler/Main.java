@@ -28,6 +28,7 @@ public class Main {
         boolean wasInString = false;
         StringBuilder thatString = new StringBuilder();
         for (int i = 0; i < theString.length(); i++) {
+            Thread.sleep(1);
             if (theString.substring(i).startsWith("(")) {
                 isInString = true;
                 i++;
@@ -59,9 +60,9 @@ public class Main {
                 i++;
                 String theChars = theString;
                 StringBuilder chars = new StringBuilder();
-                for (int j = 0; j < 512; j++) {
+                for (int j = 0; j < 128; j++) {
                     if (theString.substring(i).startsWith("*" + j)) {
-                        theChars = theString.replaceAll(theString.substring(i - 1, i + 1 + String.valueOf(j).length()).replaceAll("\\*", "\\\\*"), chars.toString());
+                        theChars = theString.substring(0, i - 1) + chars.toString() + theString.substring(i + 1 + String.valueOf(j).length());
                     }
                     chars.append(theString.toCharArray()[i - 1]);
                 }
