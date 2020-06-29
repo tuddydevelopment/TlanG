@@ -15,7 +15,10 @@ public class Main {
                 .replaceAll("\\\\<", "%L")
                 .replaceAll("\\\\>", "%R")
                 .replaceAll("\\\\'", "%U")
-                .replaceAll("\\\\,", "%D");
+                .replaceAll("\\\\,", "%D")
+                .replaceAll("\\\\\\(", "%1")
+                .replaceAll("\\\\\\)", "%2")
+                .replaceAll("\\\\n", "\n");
 
         boolean isInString = false;
         boolean wasInString = false;
@@ -76,6 +79,8 @@ public class Main {
                 .replaceAll("%R", "\\\\>")
                 .replaceAll("%U", "\\\\'")
                 .replaceAll("%D", "\\\\,")
-                .replaceAll("%P", "%"));
+                .replaceAll("%P", "%")
+                .replaceAll("%1", "(")
+                .replaceAll("%2", ")"));
     }
 }
