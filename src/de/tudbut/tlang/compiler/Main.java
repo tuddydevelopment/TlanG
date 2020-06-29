@@ -7,8 +7,9 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        while (true) {
-            String theString = Tools.getStdInput().readLine()
+        String theString;
+        while ((theString = Tools.getStdInput().readLine()) != null) {
+             theString = theString
                     .replaceAll("%", "%P")
                     .replaceAll("\\\\\\*", "%T")
                     .replaceAll("\\\\-", "%S")
@@ -73,13 +74,13 @@ public class Main {
                     .replaceAll(",", "\u001b[B")
                     .replaceAll("-", "\u001b[K")
                     .replaceAll("#", "\r")
-                    .replaceAll("%T", "\\\\\\*")
-                    .replaceAll("%S", "\\\\-")
-                    .replaceAll("%B", "\\\\#")
-                    .replaceAll("%L", "\\\\<")
-                    .replaceAll("%R", "\\\\>")
-                    .replaceAll("%U", "\\\\'")
-                    .replaceAll("%D", "\\\\,")
+                    .replaceAll("%T", "*")
+                    .replaceAll("%S", "-")
+                    .replaceAll("%B", "#")
+                    .replaceAll("%L", "<")
+                    .replaceAll("%R", ">")
+                    .replaceAll("%U", "'")
+                    .replaceAll("%D", ",")
                     .replaceAll("%P", "%")
                     .replaceAll("%1", "(")
                     .replaceAll("%2", ")"));
