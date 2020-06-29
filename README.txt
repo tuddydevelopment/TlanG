@@ -1,5 +1,28 @@
   TlanG
   ^Tuddy
    ^lang
-      ^(for) (code-)golfing
+      ^(for) (code-)Golfing
 
+
+Usage:
+
+Hello world:
+  Hello world
+aaaaa:
+  a*5
+Hello Hello Hello:
+  (Hello)*3
+<clear terminal>:
+  (#-')*511
+
+Commands:
+  <any char> print
+  <any char>*<number smaller than 512>     - print multiple
+  (<any string>)*<number smaller than 512> - print string multiple times
+  \<any command>                           - print the command, dont execute it
+  '                                        - go up in terminal (must be compatible with terminal, any linux terminal works)
+  ,                                        - go down in terminal (must be compatible with terminal, any linux terminal works)
+  <                                        - go left in terminal (must be compatible with terminal, any linux terminal works)
+  >                                        - go right in terminal (must be compatible with terminal, any linux terminal works)
+  #                                        - go to start of line in terminal (must be compatible with terminal, any linux terminal works)
+  -                                        - delete everything behind the cursor (must be compatible with terminal, any linux terminal works)
