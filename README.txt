@@ -26,4 +26,4 @@ Commands:
   >                                        - go right in terminal (must be compatible with terminal, any linux terminal works)
   #                                        - go to start of line in terminal (must be compatible with terminal, any linux terminal works)
   -                                        - delete everything behind the cursor (must be compatible with terminal, any linux terminal works)
-  \n                                       - line break (programs can only have one line so it is required)
+  \n                                       - line break (program line breaks are ignored)
