@@ -37,6 +37,8 @@ Commands:
     - delete everything behind the cursor (must be compatible with terminal, any linux terminal works)
   \n                                                                                 
     - line break (program line breaks are ignored)
+  _
+    - alias for `#,`
 
 Running:
   Download the latest JAR
