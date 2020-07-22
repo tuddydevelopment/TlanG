@@ -50,8 +50,9 @@ public class Main {
                 .replaceAll("\\\\>", "\u0004")
                 .replaceAll("\\\\'", "\u0005")
                 .replaceAll("\\\\,", "\u0006")
-                .replaceAll("\\\\\\(", "\u0007")
-                .replaceAll("\\\\\\)", "\u0008")
+                .replaceAll("\\\\_", "\u0007")
+                .replaceAll("\\\\\\(", "\u0008")
+                .replaceAll("\\\\\\)", "\u0009")
                 .replaceAll("\\\\n", "\n");
 
         boolean isInString = false;
@@ -100,6 +101,7 @@ public class Main {
             }
         }
         System.out.print(theString
+                .replaceAll("_", ",#")
                 .replaceAll("<", "\u001b[D")
                 .replaceAll(">", "\u001b[C")
                 .replaceAll("'", "\u001b[A")
@@ -113,8 +115,9 @@ public class Main {
                 .replaceAll("\\x{0004}", ">")
                 .replaceAll("\\x{0005}", "'")
                 .replaceAll("\\x{0006}", ",")
-                .replaceAll("\\x{0007}", "(")
-                .replaceAll("\\x{0008}", ")"));
+                .replaceAll("\\x{0007}", "_")
+                .replaceAll("\\x{0008}", "(")
+                .replaceAll("\\x{0009}", ")"));
         System.out.println();
     }
 }
